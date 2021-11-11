@@ -8,8 +8,8 @@
   height: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid lightgray;
-  box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
+  /* border: 1px solid lightgray;
+  box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53); */
   cursor: pointer;
 }
 
@@ -30,6 +30,10 @@
 .channel {
   margin: 0.2rem;
   font-size: 0.8rem;
+}
+
+.title {
+  color: white;
 }
 
 .channel {
