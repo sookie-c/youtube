@@ -1,5 +1,7 @@
 import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const SearchHeader = memo(({ onSearch, onLogoClick }) => {
   const inputRef = useRef();
@@ -41,11 +43,20 @@ const SearchHeader = memo(({ onSearch, onLogoClick }) => {
           />
         </button>
       </div>
-      <img
-        className={styles.profile}
-        src="images/profile.png"
-        alt="profile picture"
-      />
+
+      <div className={styles.icons}>
+        <a href="https://github.com/sookie-c/youtube" target="blank">
+          <FontAwesomeIcon icon={faGithub} className={styles.github} />
+        </a>
+
+        <a href="https://sookie-c.github.io/portfolio/" target="blank">
+          <img
+            className={styles.profile}
+            src="images/profile.png"
+            alt="profile"
+          />
+        </a>
+      </div>
     </header>
   );
 });
