@@ -12,6 +12,15 @@ function App({ youtube }) {
     setSelectedVideo(video);
   };
 
+  const homepage = () => {
+    youtube
+      .mostPopular() //
+      .then((videos) => {
+        setVideos(videos);
+        setSelectedVideo(null);
+      });
+  };
+
   const search = useCallback(
     (query) => {
       youtube
@@ -32,7 +41,7 @@ function App({ youtube }) {
 
   return (
     <div className={styles.app}>
-      <SearchHeader onSearch={search} />
+      <SearchHeader onSearch={search} onLogoClick={homepage} />
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>

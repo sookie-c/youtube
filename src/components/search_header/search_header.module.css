@@ -8,7 +8,9 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 1em;
+  margin-right: 2em;
+  cursor: pointer;
+  user-select: none;
 }
 
 .img {
@@ -21,19 +23,20 @@
 }
 
 .input {
-  margin-top: 0.4em;
-  height: 1.8rem;
+  margin-top: 0.3em;
+  padding-left: 0.4em;
+  height: 2.1rem;
   flex-basis: 100%;
   font-size: 1rem;
   outline: 0;
   background-color: black;
-  border: 1px solid dimgray;
+  border: 0.1em solid dimgray;
 }
 
 .button {
-  margin-top: 0.5em;
-  width: 1.8rem;
-  height: 1.8rem;
+  margin-top: 0.4em;
+  width: 2.2rem;
+  height: 2.05rem;
   user-select: none;
   background-color: dimgray;
   border: none;

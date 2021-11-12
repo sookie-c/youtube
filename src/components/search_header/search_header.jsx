@@ -1,7 +1,7 @@
 import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css';
 
-const SearchHeader = memo(({ onSearch }) => {
+const SearchHeader = memo(({ onSearch, onLogoClick }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -10,7 +10,6 @@ const SearchHeader = memo(({ onSearch }) => {
   };
 
   const onClick = () => {
-    console.log('onClick');
     handleSearch();
   };
 
@@ -22,7 +21,7 @@ const SearchHeader = memo(({ onSearch }) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={onLogoClick}>
         <img src="images/logo.png" alt="youtube logo" className={styles.img} />
         <h1 className={styles.title}>Youtube</h1>
       </div>
