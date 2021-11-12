@@ -10,9 +10,9 @@ const VideoItem = memo(
         className={`${styles.container} ${displayType}`}
         onClick={() => onVideoClick(video)}
       >
-        <div className={styles.video}>
+        <div className={`${styles.video} ${displayType}`}>
           <img
-            className={styles.thumbnail}
+            className={`${styles.thumbnail} ${displayType}`}
             src={snippet.thumbnails.medium.url}
             alt="video thumbnail"
           />
