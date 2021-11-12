@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  justify-content: space-between;
   height: 4rem;
   padding: 0.8em 1em;
   color: white;
@@ -8,7 +9,7 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 2em;
+  margin-top: 0.5em;
   cursor: pointer;
   user-select: none;
 }
@@ -22,11 +23,15 @@
   font-size: 1.2rem;
 }
 
+.search {
+  margin-top: 0.5em;
+}
+
 .input {
-  margin-top: 0.3em;
   padding-left: 0.4em;
-  height: 2.1rem;
-  flex-basis: 100%;
+  height: 2.3rem;
+  width: 28rem;
+  /* flex-basis: 100%; */
   font-size: 1rem;
   outline: 0;
   background-color: black;
@@ -34,17 +39,33 @@
 }
 
 .button {
-  margin-top: 0.4em;
-  width: 2.2rem;
-  height: 2.05rem;
+  width: 2.3rem;
+  height: 2.3rem;
   user-select: none;
   background-color: dimgray;
   border: none;
 }
 
 .buttonImg {
-  height: 100%;
-  padding: 0.5em 0.2em;
+  height: 0.9rem;
   cursor: pointer;
   background-color: dimgray;
+}
+
+.profile {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5em;
+}
+
+.profile:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 300ms ease-in;
+}
+
+@media screen and (max-width: 48rem) {
+  .input {
+    width: 14rem;
+  }
 }
