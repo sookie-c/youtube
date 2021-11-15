@@ -14,6 +14,7 @@ const VideoContent = ({ video, video: { snippet } }) => (
       allowFullScreen
     ></iframe>
     <h2>{snippet.title}</h2>
+    <div className={styles.bar}></div>
     <h3>{snippet.channelTitle}</h3>
     <pre className={styles.description}>{snippet.description}</pre>
   </section>
